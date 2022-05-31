@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: dm-api-1
-  namespace: helloworld
+  namespace: argocd
   #finalizers:  commented by ken, to fix delete stuck
   #- resources-finalizer.argocd.argoproj.io
 spec:
