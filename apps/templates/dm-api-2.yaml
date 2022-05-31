@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: dm-api-2
-  namespace: helloworld
+  namespace: argocd
   # finalizers:
   # - resources-finalizer.argocd.argoproj.io
 spec:
