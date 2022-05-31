@@ -13,9 +13,6 @@ containerPort: "5000"
 readinessProbePath: / 
 livenessProbePath: / 
 
-
-
-
 serviceAccount:
   create: false
   name: "default"
