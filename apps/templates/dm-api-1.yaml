@@ -3,8 +3,8 @@ kind: Application
 metadata:
   name: dm-api-1
   namespace: helloworld
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
+  #finalizers:  commented by ken
+  #- resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: helloworld
@@ -14,3 +14,9 @@ spec:
     path: dm-api-1
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+
+  syncPolicy: # added by ken
+    automated:
+        prune: true
+        allowEmpty: true
+        selfHeal: true
