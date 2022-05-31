@@ -21,4 +21,4 @@ spec:
         allowEmpty: true
         selfHeal: true
         syncOptions:
-        - ApplyOutOfSyncOnly=true
+        - ApplyOutOfSyncOnly: true
