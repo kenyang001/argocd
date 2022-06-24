@@ -1,7 +1,7 @@
 
 spec:
   destination:
-    server: https://kubernetes.default.svc
+    server: https://d1683604-ad9d-488f-bf90-05d1949b9312.ap-south-1.linodelke.net:443
   source:
     repoURL: https://github.com/kenyang001/argocd.git
     targetRevision: HEAD
